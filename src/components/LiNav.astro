@@ -1,0 +1,55 @@
+---
+interface Props {
+  dataTooltip: string;
+  text: string;
+}
+
+const { dataTooltip, text } = Astro.props;
+---
+
+<li>
+  <a class="group block link relative w-7 lg:w-full" href="#"
+    data-tooltip={dataTooltip}>
+    <svg
+      class="w-full fill-transparent stroke-secondary relative icon-svg group-hover:fill-secondary group-hover:stroke-transparent transition-colors duration-300 lg:hidden"
+      data-tooltip="Market"
+      data-name="Layer 1"
+      viewBox="-0.5 -0.5 25 25"
+      stroke-width="1"
+      stroke="none"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <slot name="icon" />
+    </svg>
+    <!-- <slot name="text" /> -->
+    <span class="hidden lg:block transition-colors duration-200 lg:hover:text-primary">{text}</span>
+  </a>
+</li>
+
+<style>
+  .link::after {
+    content: attr(data-tooltip);
+    font-size: 0.8rem;
+    width: max-content;
+    background-color: #888;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    transition: all 0.8s;
+  }
+  .link:hover::after {
+    display: block;
+  }
+  @media screen and (min-width: 1024px) {
+    .link:hover::after {
+      display: none;
+    }
+  }
+</style>

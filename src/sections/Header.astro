@@ -1,0 +1,143 @@
+---
+import LiNav from "../components/LiNav.astro";
+---
+
+<header class="py-6 sticky top-0 z-10 header lg:fixed lg:w-full">
+  <section
+    class="w-11/12 mx-auto flex flex-col items-center gap-2 md:flex-row md:justify-between"
+  >
+    <div
+      class="flex justify-between items-center w-full
+    md:w-3/5 lg:w-[49%]"
+    >
+      <a class="logo" href="/">
+        <h3 class="font-belgrano text-4xl text-primary">
+          Art<span class="text-secondary">zie.</span>
+        </h3>
+      </a>
+
+      <div class="content__nav relative z-10">
+        <nav class="">
+          <ul class="flex justify-center items-center gap-3 md:gap-4">
+            <!-- primer li -->
+            <LiNav dataTooltip="Market" text="Market">
+              <path
+                slot="icon"
+                d="M19 17a5.994 5.994 0 0 1-3-.806A5.994 5.994 0 0 1 13 17h-2a5.938 5.938 0 0 1-3-.818A5.936 5.936 0 0 1 5 17H4a5.949 5.949 0 0 1-3-.813V21a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3v-4.812A5.958 5.958 0 0 1 20 17ZM17 0v6h-2V0H9v6H7V0H2.2L.024 9.783 0 11a4 4 0 0 0 4 4h1a3.975 3.975 0 0 0 3-1.382A3.975 3.975 0 0 0 11 15h2a3.99 3.99 0 0 0 3-1.357A3.99 3.99 0 0 0 19 15h1a4 4 0 0 0 4-4v-1L21.8 0Z"
+              ></path>
+            </LiNav>
+
+            <!-- segundo li -->
+            <LiNav dataTooltip="How it works" text="How it works">
+              <path
+                slot="icon"
+                d="M21 8.986c-.014 0-.026.004-.04.004l-1.771-2.951A2.983 2.983 0 0 0 20 4a3 3 0 0 0-3-3 2.99 2.99 0 0 0-2.816 2H9.817a2.99 2.99 0 0 0-2.816-2 3 3 0 0 0-3 3c0 .79.312 1.503.811 2.039L3.041 8.99c-.014 0-.026-.004-.04-.004a3 3 0 1 0 0 6l.024-.002 1.787 2.978a2.983 2.983 0 0 0-.811 2.039 3 3 0 0 0 3 3 2.99 2.99 0 0 0 2.816-2h4.367a2.99 2.99 0 0 0 2.816 2 3 3 0 0 0 3-3c0-.79-.312-1.503-.811-2.039l1.787-2.978.024.002a3 3 0 1 0 0-6Zm-3.591 8.055C17.274 17.022 17.14 17 17 17a2.99 2.99 0 0 0-2.816 2H9.817a2.99 2.99 0 0 0-2.816-2c-.14 0-.274.023-.409.041l-1.664-2.773a2.98 2.98 0 0 0 1.073-2.282 2.98 2.98 0 0 0-1.062-2.273l1.653-2.755c.135.019.269.041.409.041a2.99 2.99 0 0 0 2.816-2h4.367a2.99 2.99 0 0 0 2.816 2c.14 0 .274-.023.409-.041l1.653 2.755A2.979 2.979 0 0 0 18 11.986c0 .919.422 1.731 1.073 2.282l-1.664 2.773ZM15.4 8.887l-1.002.577A3.492 3.492 0 0 0 13 8.663V7.5h-2v1.163a3.485 3.485 0 0 0-1.398.801L8.6 8.887l-.998 1.733 1 .576c-.061.259-.102.526-.102.803s.041.544.102.803l-1 .577.998 1.732 1.001-.577c.391.371.87.642 1.399.802v1.163h2v-1.163a3.48 3.48 0 0 0 1.399-.802l1.001.577.998-1.732-1-.577c.061-.259.102-.526.102-.803s-.041-.544-.102-.803l1-.576-.998-1.733ZM12 13.5c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5Z"
+              ></path>
+            </LiNav>
+
+            <!-- tercer li -->
+            <LiNav dataTooltip="Gallery" text="Gallery">
+              <path
+                slot="icon"
+                d="M2.00002 0H13C14.1045 0 15 0.895453 15 2.00002V9C15 10.1046 14.1045 11 13 11H2.00002C0.895453 11 0 10.1046 0 9V2.00002C0 0.895453 0.895453 0 2.00002 0ZM19 0H22C23.1046 0 24 0.895453 24 2.00002V9C24 10.1046 23.1046 11 22 11H19C17.8954 11 17 10.1046 17 9V2.00002C17 0.895453 17.8954 0 19 0ZM2.00002 13H5.00002C6.10458 13 7.00003 13.8954 7.00003 15V22C7.00003 23.1045 6.10458 24 5.00002 24H2.00002C0.895453 24 0 23.1046 0 22V15C0 13.8954 0.895453 13 2.00002 13ZM11 13H22C23.1046 13 24 13.8954 24 15V22C24 23.1046 23.1046 24 22 24H11C9.89545 24 9 23.1046 9 22V15C9 13.8954 9.89545 13 11 13Z"
+              ></path>
+            </LiNav>
+
+            <!-- cuarto li -->
+            <LiNav dataTooltip="About" text="About">
+              <path
+                slot="icon"
+                d="M12 24A12 12 0 1 0 0 12a12.013 12.013 0 0 0 12 12Zm0-19a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 12 5Zm-1 5h1a2 2 0 0 1 2 2v6a1 1 0 0 1-2 0v-6h-1a1 1 0 0 1 0-2Z"
+              ></path>
+            </LiNav>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <aside
+      class="aside w-2/3 max-w-[200px] flex justify-between items-center p-2 relative z-0
+      md:w-full md:max-w-max md:gap-4 md:opacity-100 md:"
+    >
+      <a
+        class="w-max border-b-2 border-transparent hover:border-secondary transition-border duration-300 lg:text-white lg:hover:border-white"
+        href="#">Sign Up</a
+      >
+      <a
+        class="w-max bg-primary text-white px-4 py-2 rounded-md hover:scale-105 transition-scale duration-300"
+        href="#">Sign In</a
+      >
+    </aside>
+
+    <button
+      class="absolute -bottom-5 bg-white p-2 rounded-full cursor-pointer btnSvg md:hidden"
+    >
+      <svg
+        class="arrow w-6 fill-secondary transition-rotate duration-500 relative z-10 rotate-180"
+        viewBox="0 0 24 24"
+        fill="none"
+        viewBox="0 0 24 24"
+        ><path
+          d="M18.71 8.21a1 1 0 0 0-1.42 0l-4.58 4.58a1 1 0 0 1-1.42 0L6.71 8.21a1 1 0 0 0-1.42 0 1 1 0 0 0 0 1.41l4.59 4.59a3 3 0 0 0 4.24 0l4.59-4.59a1 1 0 0 0 0-1.41Z"
+        ></path></svg
+      >
+    </button>
+  </section>
+</header>
+<style>
+  .header {
+    animation: clipPath 0.5s ease-in-out;
+    transition: height 10s ease-in-out;
+  }
+  .header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    animation: desplice both;
+    animation-timeline: scroll(root);
+    animation-range: 0 150px;
+    z-index: -10;
+  }
+  @keyframes clipPath {
+    0% {
+      clip-path: inset(0 0 100% 0);
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  @keyframes desplice {
+    100% {
+      background-color: #ffffff80;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 20px 5px #00000070;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  .aside {
+    transition: transform 0.5s;
+  }
+  aside.hid {
+    animation: encoger both 0.5s ease-in-out;
+  }
+
+  @keyframes encoger {
+    100% {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const $btn = document.querySelector(".btnSvg");
+  const $aside = document.querySelector(".aside");
+  $btn?.addEventListener("click", () => {
+    const $arrow = $btn.children[0];
+    $arrow.classList.toggle("rotate-180");
+    $aside?.classList.toggle("hid");
+
+    $aside?.classList.toggle("scale-0");
+    // $aside?.classList.toggle("opacity-0")
+  });
+</script>
