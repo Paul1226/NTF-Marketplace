@@ -5,3 +5,4 @@ HEADER
 
 DOCUMENT
 - [_] Optimizar todas las imagenes de la página (excepto del header)
+- [_] Actualizar el favicon de la página.
